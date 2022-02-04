@@ -90,7 +90,7 @@ module roks_cluster {
   # Cluster Variables
   machine_type      = var.machine_type
   workers_per_zone  = var.workers_per_zone
-#  entitlement       = var.entitlement
+  entitlement       = null
   kube_version      = local.latest
   tags              = var.tags
   worker_pools      = var.worker_pools
